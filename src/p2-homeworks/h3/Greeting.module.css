@@ -7,14 +7,5 @@
     border: 1px solid red;
 }
 .button {
-    display: inline-block;
-    width: 50px;
-    background-color: seagreen;
-    border-radius: 15px;
-    color: white;
-    transition-duration: 0.2s;
-}
-.button:hover {
-    background-color: white;
-    color: black;
+
 }

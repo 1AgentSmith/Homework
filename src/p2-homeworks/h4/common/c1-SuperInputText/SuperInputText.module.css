@@ -1,10 +1,19 @@
 .superInput {
-
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline:none
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: 3px solid darkred;
+    background: rosybrown;
+    border-radius: 2px;
+    outline:none
+
 }
 
 .error {

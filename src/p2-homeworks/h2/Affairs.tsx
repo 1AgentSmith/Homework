@@ -1,11 +1,14 @@
 import React from 'react'
 import Affair from './Affair'
-import {AffairType, FilterType} from './HW2'
+import {AffairType, filterAffairs, FilterType} from './HW2'
+import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
+import s from './Affairs.module.css'
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
     setFilter: (filterValue: FilterType) => void
     deleteAffairCallback: (_id: number) => void
+    filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -35,10 +38,11 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
 
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
+
+            <SuperButton onClick={setAll} className={props.filter === 'all'? s.someClass : ''}>All</SuperButton>
+            <SuperButton onClick={setHigh} className={props.filter === 'high'? s.someClass : ''}>High</SuperButton>
+            <SuperButton onClick={setMiddle} className={props.filter === 'middle'? s.someClass : ''}>Middle</SuperButton>
+            <SuperButton onClick={setLow} className={props.filter === 'low'? s.someClass : ''}>Low </SuperButton>
         </div>
     )
 }
