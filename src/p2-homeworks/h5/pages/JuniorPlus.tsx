@@ -12,7 +12,7 @@ export const JuniorPlus = ()=> {
             <HW10/>
             <HW11/>
             <HW12/>*/}
-            Please complete previous tasks
+
         </div>
     )
 }
