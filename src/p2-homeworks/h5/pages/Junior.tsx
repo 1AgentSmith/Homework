@@ -8,7 +8,7 @@ export const Junior = ()=> {
     return(
         <div>
             <HW6/>
-            {/*<HW7/>*/}
+            <HW7/>
             {/*<HW8/>*/}
         </div>
     )
